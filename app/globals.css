@@ -2,7 +2,7 @@
 
 /* Tokens from Design files/DESIGN.md. Canvas is the cobalt seen on the live reference site. */
 :root {
-  --canvas: #447cf0;          /* swap to #1c3c27 for the evergreen variant in the doc */
+  --canvas: #0047ab;          /* cobalt blue. Previous: #447cf0 */
   --canvas-deep: #263c80;
   --frost: #fffffd;
   --pewter: #dfe2e5;
