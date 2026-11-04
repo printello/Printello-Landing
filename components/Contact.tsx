@@ -19,6 +19,7 @@ export default function Contact() {
         <img src="/img/mark-white.svg" alt="" className="h-32 w-auto opacity-80 md:h-40" />
         <ul className="space-y-0.5 text-[15px]">
           <li><a className="ghost" href={SITE.dtfUrl}>DTF gang sheets</a></li>
+          <li><a className="ghost" href={SITE.catalogueUrl}>Catalogue</a></li>
           <li><a className="ghost" href={SITE.whatsappLink}>WhatsApp</a></li>
           <li><a className="ghost" href={SITE.instagramUrl} target="_blank" rel="noopener noreferrer">Instagram</a></li>
           <li><a className="ghost" href={SITE.facebookUrl} target="_blank" rel="noopener noreferrer">Facebook</a></li>

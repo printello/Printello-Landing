@@ -5,6 +5,7 @@ export const SITE = {
   whatsappLink: "https://wa.me/919503085155",
   instagramUrl: "https://www.instagram.com/printello.in/",
   facebookUrl: "https://www.facebook.com/printello.in/",
+  catalogueUrl: "https://catalogue.printello.in",
   dtfUrl: "https://dtf.printello.in",
   customUrl: "https://custom.printello.in",
 };
