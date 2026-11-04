@@ -1,0 +1,55 @@
+;;
+;; Domain:     printello.in.
+;; Exported:   2026-11-04 12:30:18
+;;
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.  In particular, you must:
+;;   -- update the SOA record with the correct authoritative name server
+;;   -- update the SOA record with the contact e-mail address information
+;;   -- update the NS record(s) with the authoritative name servers for this domain.
+;;
+;; For further information, please consult the BIND documentation
+;; located on the following website:
+;;
+;; http://www.isc.org/
+;;
+;; And RFC 1035:
+;;
+;; http://www.ietf.org/rfc/rfc1035.txt
+;;
+;; Please note that we do NOT offer technical support for any use
+;; of this zone data, the BIND name server, or any other third-party
+;; DNS software.
+;;
+;; Use at your own risk.
+;; SOA Record
+printello.in	3600	IN	SOA	james.ns.cloudflare.com. dns.cloudflare.com. 2054546201 10000 2400 604800 3600
+
+;; NS Records
+printello.in.	86400	IN	NS	james.ns.cloudflare.com.
+printello.in.	86400	IN	NS	kinsley.ns.cloudflare.com.
+
+;; CNAME Records
+catalogue.printello.in.	1	IN	CNAME	7294e978a65fc2cd.vercel-dns-017.com. ; cf_tags=cf-proxied:false
+custom.printello.in.	1	IN	CNAME	90aa9c424bb18018.vercel-dns-017.com. ; cf_tags=cf-proxied:false
+_dmarc.printello.in.	1	IN	CNAME	_dmarc.wixemails.com. ; cf_tags=cf-proxied:false
+dtf.printello.in.	1	IN	CNAME	printello-web.pages.dev. ; cf_tags=cf-proxied:false
+rsend.custom.printello.in.	3600	IN	CNAME	rsend.forge.rmta.net. ; cf_tags=cf-proxied:false
+rsend.mail.printello.in.	3600	IN	CNAME	rsend.forge.rmta.net. ; cf_tags=cf-proxied:false
+s1._domainkey.printello.in.	1	IN	CNAME	s1._domainkey.printello.in.s017.ascendbywix.com. ; cf_tags=cf-proxied:false
+s2._domainkey.printello.in.	1	IN	CNAME	s2._domainkey.printello.in.s017.ascendbywix.com. ; cf_tags=cf-proxied:false
+send.custom.printello.in.	3600	IN	CNAME	send.forge.rmta.net. ; cf_tags=cf-proxied:false
+send.mail.printello.in.	3600	IN	CNAME	send.forge.rmta.net. ; cf_tags=cf-proxied:false
+
+;; MX Records
+printello.in.	1	IN	MX	15 mmgv4daeqyb3sngu2pgzvf5t4x7lbqmu42xlr3umq23uzmfcxiyq.mx-verification.google.com.
+printello.in.	1	IN	MX	1 smtp.google.com.
+send.dtf.printello.in.	3600	IN	MX	10 feedback-smtp.ap-northeast-1.amazonses.com.
+
+;; TXT Records
+pinterest-site-verification=c35b06be3d425720249f85837166863d.printello.in.	1	IN	TXT	"@"
+resend._domainkey.custom.printello.in.	3600	IN	TXT	"p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCh12Volabvkw1ijAI1YZsXiwiNoHfpiwVJni408LCLkCV3e2NqLYcS403X3iwn0xs7Mun1hGiyWTDC1+gXqUHSxJO2RsDmgov1FfYe8iF+p2JmkT0cnJXkZclz5uYF4BJeI5Pc9ByeM29oEyk80lAepgXuxYkRXENxHsbCiwxnQwIDAQAB"
+resend._domainkey.dtf.printello.in.	3600	IN	TXT	"p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCtks9N++Q2JBlIm8sYn/KctBQGqHQP/o761+hsNU8igQ4NcwJmTGvg8ekVNZ0hCTt6gVLrIlErUtkbeqwDU3/Y3LrIZtHJpKYl6D8b2tp/dTzMiFVTEcwJkCzVf/j9/pak9mcf028LQiyPuZUGme1cCGvQImAzSzzCbbwCt6B2uwIDAQAB"
+resend._domainkey.mail.printello.in.	3600	IN	TXT	"p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDfiZzkcxwEDMb2Gz5FNz9NH1LxUerDaTCx7loi6jRusnb7ybk2KhTR1a8JQZMntHSlAWSlmC3UMcOENA9Gs78d5igq5si4e/jMwDdUvvQ9zcDVqaMeaBHnJaTSRKKZev/IA38SIRyquBFis4QOi1O+TcgjYDDDRqEhCpVWk6A5nQIDAQAB"
+send.dtf.printello.in.	3600	IN	TXT	"v=spf1 include:amazonses.com ~all"
