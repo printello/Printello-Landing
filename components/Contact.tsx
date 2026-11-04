@@ -20,6 +20,8 @@ export default function Contact() {
         <ul className="space-y-0.5 text-[15px]">
           <li><a className="ghost" href={SITE.dtfUrl}>DTF gang sheets</a></li>
           <li><a className="ghost" href={SITE.whatsappLink}>WhatsApp</a></li>
+          <li><a className="ghost" href={SITE.instagramUrl} target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a className="ghost" href={SITE.facebookUrl} target="_blank" rel="noopener noreferrer">Facebook</a></li>
           <li><a className="ghost" href={`mailto:${SITE.email}`}>Email</a></li>
         </ul>
       </div>
